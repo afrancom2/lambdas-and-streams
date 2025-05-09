@@ -4,4 +4,5 @@ package com.debuggeando_ideas.lambdas;
 public interface Printer<T> {
 
     void print(T toPrint);
+    
 }
