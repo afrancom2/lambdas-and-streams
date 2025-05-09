@@ -4,12 +4,11 @@ import lombok.ToString;
 
 import java.util.Random;
 import java.util.UUID;
-import java.util.function.Supplier;
 
 @ToString
 public class MyObject {
-    private  String string;
-    private  Integer num;
+    private String string;
+    private Integer num;
 
     MyObject() {
         this.string = UUID.randomUUID().toString();
