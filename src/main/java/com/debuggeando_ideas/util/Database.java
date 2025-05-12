@@ -239,7 +239,7 @@ public class Database {
                                 new Review("Is the best x2", 5)
                         ))
                         .officialWebsite("www.forza.com")
-                        .isDiscount(false)
+                        .isDiscount(true)
                         .totalSold(74)
                         .build()
         );
