@@ -4,11 +4,13 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
 @Data
 @Builder
+@EqualsAndHashCode(of = "name")
 public class Videogame {
     private String name;
     private Double price;
