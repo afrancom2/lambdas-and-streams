@@ -12,6 +12,7 @@ public class CollectorsReduceFunctions {
         Stream<Videogame> videogames = Database.videogames.stream();
         avg(videogames);
         sum(Database.videogames.stream());
+        join(Database.videogames.stream());
     }
 
     static void avg(Stream<Videogame> videogames) {
@@ -29,6 +30,8 @@ public class CollectorsReduceFunctions {
 
     static void join(Stream<Videogame> videogames) {
         String stringGames = videogames
-                .,a;
+                .map(Videogame::toString)
+                .collect(Collectors.joining("\n"));
+        System.out.println(stringGames);
     }
 }
